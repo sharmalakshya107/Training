@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Student Info</title>
+</head>
+<body>
+    <h2>Update Student Information</h2>
+    <form action="update" method="post">
+        <label for="roll-no">Roll Number:</label><br>
+        <input type="text" id="roll-no" name="roll-no" required><br><br>
+
+        <label for="firstname">First Name:</label><br>
+        <input type="text" id="firstname" name="firstname"><br><br>
+
+        <label for="lastname">Last Name:</label><br>
+        <input type="text" id="lastname" name="lastname"><br><br>
+
+        <label for="uni-name">University Name:</label><br>
+        <input type="text" id="uni-name" name="uni-name"><br><br>
+
+        <label for="col-name">College Name:</label><br>
+        <input type="text" id="col-name" name="col-name"><br><br>
+
+        <label for="gender">Gender:</label><br>
+        <input type="text" id="gender" name="gender"><br><br>
+
+        <input type="hidden" name="action" value="update">
+        <input type="submit" value="Update">
+    </form>
+</body>
+</html>
