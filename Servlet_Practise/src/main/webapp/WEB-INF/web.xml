@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+         http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+
+    <servlet>
+        <servlet-name>SubmitForm</servlet-name>
+        <servlet-class>com.Servlet.Insert.SubmitForm</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>UpdateForm</servlet-name>
+        <servlet-class>com.Servlet.Update.UpdateForm</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>DeleteForm</servlet-name>
+        <servlet-class>com.Servlet.Delete.DeleteForm</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SubmitForm</servlet-name>
+        <url-pattern>/submitform</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>UpdateForm</servlet-name>
+        <url-pattern>/updateform</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>DeleteForm</servlet-name>
+        <url-pattern>/deleteform</url-pattern>
+    </servlet-mapping>
+
+</web-app>

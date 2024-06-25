@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Data Updation Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="form-container">
+        <form action="updateform" method="post">
+            <div class="form-name">
+                <h2 class="form-heading">Student Data Updation Form</h2>
+            </div>
+            <div class="form-group">
+                <input type="text" class="text-size text-height-1 hover" placeholder="Enter Roll No." name="rllno" style ="margin-bottom: 5px;">
+            </div>
+            <div class="para3" style="color: white; font-weight: 600; font-size: 1.2rem; margin: 10px; text-align: center;"><u>Update Details</u></div>
+            <div class="form-group">
+                <input type="text" class="text-size text-height-2 hover" placeholder="First Name" name="fn">
+                <input type="text" class="text-size text-height-2 hover" placeholder="Last Name" name="ln">
+            </div>
+            <div class="form-group">
+                <input type="text" class="text-size text-height-1 hover" placeholder="College Id" name="clgId">
+            </div>
+            <div class="form-group">
+                <div class="para1" style="color: white; font-weight: 600; font-size: 1.1rem; margin-left:5px;">Gender-</div>
+                <select class="text-size text-height-3" name="gender">
+                    <option class="option">None</option>
+                    <option class="option">Male</option>
+                    <option class="option">Female</option>
+                    <option class="option">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <div class="para1" style="color: white; font-weight: 600; font-size: 1.1rem; margin-left:5px;">Course-</div>
+                <select id="course" class="text-size text-height-3" onchange="updateSubjects()" name="crse">
+                    <option class="option">None</option>
+                    <option class="option">B. Tech</option>
+                    <option class="option">MBA</option>
+                    <option class="option">M. Tech</option>
+                </select>
+                <br>
+                <div class="para2" style="color: white; font-weight: 600; font-size: 1.1rem; margin-left:5px;">Subject-</div>
+                <select id="subject" class="text-size text-height-3" style="color: black !important;" name="sbj">
+                    <option class="option">None</option>
+                    <option class="option">Computer Science and Engineering</option>
+                    <option class="option">Artificial Intelligence & Machine Learning</option>
+                    <option class="option">Artificial Intelligence & Data Science</option>
+                    <option class="option">Electrical Engineering</option>
+                    <option class="option">Civil Engineering</option>
+                    <option class="option">Mechanical Engineering</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <div class="para3" style="color: white; font-weight: 600; font-size: 1.1rem; margin-left:5px;">Year-</div>
+                <select id="year" class="text-size text-height-3" name="yr">
+                    <option class="option">None</option>
+                    <option class="option">1st</option>
+                    <option class="option">2nd</option>
+                    <option class="option">3rd</option>
+                    <option class="option">4th</option>
+                </select>
+            </div>
+            <div class="form-actions" style="margin-bottom: 15px;">
+                <button type="submit" class="btn">Update</button>
+                <button type="reset" class="btn">Clear</button>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
