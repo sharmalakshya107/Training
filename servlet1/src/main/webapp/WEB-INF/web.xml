@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" id="WebApp_ID" version="5.0">
+  <display-name>servlet1</display-name>
+ 
+ <servlet>
+<servlet-name>first</servlet-name>
+<servlet-class>com.lakshya.servlet2</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>first</servlet-name>
+<url-pattern>/submitform</url-pattern>
+</servlet-mapping>
+ <servlet>
+<servlet-name>first2</servlet-name>
+<servlet-class>com.lakshya.update1</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>first2</servlet-name>
+<url-pattern>/update</url-pattern>
+</servlet-mapping>
+ <servlet>
+<servlet-name>first3</servlet-name>
+<servlet-class>com.lakshya.delete1</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>first3</servlet-name>
+<url-pattern>/delete</url-pattern>
+</servlet-mapping>
+
+
+ 
+</web-app>
